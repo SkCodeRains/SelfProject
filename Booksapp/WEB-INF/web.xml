@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<web-app id="WebApp_ID" version="4.0">
+	<display-name>Booksapp</display-name>
+	<servlet>
+		<servlet-name>ConnectionStablizer</servlet-name>
+		<servlet-class>com.coderains.jdbc.ConnectionStablizer</servlet-class>
+		<load-on-startup>0</load-on-startup>
+	</servlet>
+
+	<welcome-file-list>
+		<welcome-file>main.html</welcome-file>
+	</welcome-file-list>
+
+</web-app>

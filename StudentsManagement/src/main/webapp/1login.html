@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+	<meta charset='utf-8'>
+	<meta http-equiv='X-UA-Compatible' content='IE=edge'>
+	<title>Page Title</title>
+	<meta name='viewport' content='width=device-width, initial-scale=1'>
+	<link rel='stylesheet' type='text/css' media='screen' href='main.css'>
+	<script src='main.js'></script>
+	<link rel='stylesheet' href='bootstrap-4.3.1-dist/css/bootstrap.css'>
+</head>
+
+<body>
+	<div class="container-fluid">
+		<h3 class="btn" id="origin">
+
+		</h3>
+
+		<h3 class="btn" id="format">
+
+		</h3>
+	</div>
+
+
+	<form action="filereaderAndPrinter" class="" method="POST" enctype="multipart/form-data">
+		<h5>
+			reading data and printing on browser
+		</h5>
+		
+		<input type="file" name="filesss" id="">
+		<input type="submit" name="" id="">
+	</form>
+
+	<form action="filereaderAndCopy" class="form-control form-group" method="POST" enctype="multipart/form-data">
+		<h5>
+			reading data and printing on browser
+		</h5> <input type="file" name="filesss" id="">
+		<input type="submit" name="" id="">
+	</form>
+
+
+
+	<div id="getMSG">
+
+	</div>
+
+	<script>
+		setDate();
+		setInterval(() => {
+			setDate();
+		}, 3000);
+		function setDate() {
+			var date = new Date();
+			today = date.getDate() + ':' + (date.getMonth() + 1) + ':' + date.getFullYear();
+			document.getElementById("origin").innerHTML = today;
+		}
+
+	</script>
+
+</body>
+
+</html>

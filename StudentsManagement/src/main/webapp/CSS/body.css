@@ -1,0 +1,22 @@
+html {
+    width: 100%;
+    height: 100%;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    background-size: cover;
+    -o-background-size: cover;
+    background-image: linear-gradient(220.3deg, rgb(88, 114, 230) 10.9%, rgb(140, 35, 172) 87.1%) !important;
+    overflow: hidden;
+}
+
+.details {
+	border-radius: 5px;
+	 animation: myanimation 5s infinite;
+}
+@keyframes myanimation {
+  0% {box-shadow: 1px -1px 100px 1px red;}
+  25%{ box-shadow: 1px -1px 100px 1px yellow;}
+  50%{box-shadow: 1px -1px 100px 1px green;}
+  75%{box-shadow: 1px -1px 100px 1px brown;}
+  100% {box-shadow: 1px -1px 100px 1px red;}
+}

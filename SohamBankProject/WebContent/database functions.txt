@@ -1,0 +1,96 @@
+/*  tables*/
+users
+accounts
+acctransactions
+acchistory
+
+
+
+/*procedures*/
+newaccount()
+transaction()
+search()
+deletes()
+searchUpd()
+
+
+/* trigered*/
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+	try {
+		String ID = String.valueOf(session.getAttribute("ID"));
+		double limit = 0, available = 0;
+		if (ID.equalsIgnoreCase("Cashier")) {
+			limit = 20000;
+		} else if (ID.equalsIgnoreCase("Customer")) {
+			limit = 5000;
+		} else if (ID.equalsIgnoreCase("Manager")) {
+			limit = Double.parseDouble(request.getParameter("amount"));
+			JOptionPane.showMessageDialog(null, request.getParameter("amount"));
+		}
+
+
+
+        	<%
+			String to = "", from = "";
+		String t1 = "", t2 = "", id = "";
+		id = RandomString.getAlphaNumericString(10);
+		double amount = 0.0;
+		amount = Double.parseDouble(request.getParameter("amount"));
+		JOptionPane.showMessageDialog(null, amount);
+		to = request.getParameter("to");
+		from = request.getParameter("from");
+		Connection Cn = MySQL.getdb();
+		PreparedStatement Pt = Cn.prepareStatement("select * from accounts where accno=? or accno=?;");
+		Pt.setString(1, from);
+		Pt.setString(2, to);
+		ResultSet Rt = Pt.executeQuery();
+		if (Rt.next()) {
+			t1 = Rt.getString(1);
+			available = Rt.getDouble(4);
+		}
+		if (Rt.next()) {
+			t2 = Rt.getString(1);
+		}
+		if (t1.equalsIgnoreCase(from) && t2.equalsIgnoreCase(to)) {
+			if (available >= amount) {
+				if (limit >= amount) {
+			CallableStatement Ct = Cn.prepareCall("{call transaction(?,?,?,?)}");
+			Ct.setString(1, t1);
+			Ct.setString(1, t2);
+			Ct.setString(1, id);
+			Ct.setDouble(1, amount);
+			int val = Ct.executeUpdate();
+			if (val > 0) {
+				out.print("Amount Hasbeen Transferd");
+			}
+				} else {
+			out.print("Your Amount Is Too Much For Transfer  Contact Manager");
+				}
+
+			} else {
+				out.print("<label>Account Have Less Amount</label>");
+			}
+		} else {
+			out.print("Account Number Not Match");
+		}
+
+		} catch (Exception e) {
+			out.print(e);
+		}
+		%>

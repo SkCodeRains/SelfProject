@@ -1,0 +1,181 @@
+body {
+	background: rgb(172, 148, 210);
+	background: linear-gradient(90deg, rgba(172, 148, 210, 0.7987570028011204)
+		0%, rgba(158, 101, 211, 0.7483368347338936) 9%,
+		rgba(191, 93, 129, 0.8155637254901961) 58%,
+		rgba(178, 110, 110, 0.804359243697479) 69%,
+		rgba(163, 130, 178, 0.7483368347338936) 82%);
+}
+
+text {
+	font-size: 25px;
+	background: -webkit-linear-gradient(#fff, #fff);
+	-webkit-background-clip: text;
+	-webkit-text-fill-color: transparent;
+}
+
+.divLoginMain {
+	height: 100vh;
+	padding-top: 15%;
+	size: inherit;
+}
+
+input {
+	background-clip: padding-box; /* !importanté */
+	border: solid$border transparent; /* !importanté */
+	border-radius: 1em;
+	width: 90%;
+	padding: 12px 20px;
+	margin: 8px 0;
+	box-sizing: border-box;
+	-webkit-transition: 0.5s;
+	transition: 0.5s;
+	outline: none;
+	background: transparent;
+}
+
+input  :focus {
+	border: 3px solid #000;
+}
+
+.container {
+	position: relative;
+	padding-left: 35px;
+	margin-bottom: 12px;
+	cursor: pointer;
+	font-size: 22px;
+	position: relative;
+}
+
+/* Hide the browser's default radio button */
+.container input {
+	opacity: 0;
+	float: right;
+}
+
+/* Create a custom radio button */
+.checkmark {
+	position: absolute;
+	top: 0;
+	left: 0;
+	height: 20px;
+	width: 20px;
+	background-color: #eee;
+	border-radius: 50%;
+}
+
+/* On mouse-over, add a grey background color */
+.container:hover input ~ .checkmark {
+	background-color: #cc0;
+}
+
+/* When the radio button is checked, add a blue background */
+.container input:checked ~ .checkmark {
+	background-color: #2196F3;
+}
+
+/* Create the indicator (the dot/circle - hidden when not checked) */
+.checkmark:after {
+	content: "";
+	position: absolute;
+	display: none;
+}
+
+/* Show the indicator (dot/circle) when checked */
+.container input:checked ~ .checkmark:after {
+	display: block;
+}
+
+/* Style the indicator (dot/circle) */
+.container .checkmark:after {
+	top: 7px;
+	left: 7px;
+	width: 6px;
+	height: 6px;
+	border-radius: 10%;
+	background: white;
+}
+
+.divradio {
+	padding-left: 100px;
+	height: 8px;
+}
+
+.Submitcss {
+	background-image: linear-gradient(to right, #16A085 0%, #F4D03F 51%, #16A085 100%);
+	width: 44%;
+}
+
+.Submitcss :hover {
+	background-position: right center;
+}
+
+label, input {
+	font-size: large;
+	font-style: b;
+	font-family: "Lucida Console", Monaco, monospace;
+}
+
+.bottem-wthree-footer {
+	left:
+}
+
+.leftsidediv {
+	width: 49%;
+	float: left;
+}
+
+.rightsidediv {
+	width: 50%;
+	float: right;
+}
+
+
+
+
+/* popup */
+.popup-effect {
+	position: fixed;
+	top: 0;
+	bottom: 0;
+	left: 0;
+	right: 0;
+	background: rgba(152, 152, 152, 0.7);
+	transition: opacity 0ms;
+	visibility: hidden;
+	opacity: 0;
+	z-index: 99;
+}
+
+.popup-effect:target {
+	visibility: visible;
+	opacity: 1;
+}
+
+.popup {
+	background: #eaeaeabf;
+	border-radius: 4px;
+	max-width: 430px;
+	position: relative;
+	margin: 11em auto;
+	padding: 3em 2em;
+	z-index: 999;
+	text-align: center;
+}
+
+.popup .close {
+	position: absolute;
+	top: 5px;
+	right: 15px;
+	transition: all 200ms;
+	font-size: 30px;
+	font-weight: bold;
+	text-decoration: none;
+	color: #fff;
+}
+
+.popup .close:hover {
+	color: #686de0;
+}
+
+/* //popup */

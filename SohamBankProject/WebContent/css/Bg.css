@@ -1,0 +1,17 @@
+@charset "ISO-8859-1";
+
+html {
+	background: rgb(2, 0, 36);
+	background: linear-gradient(20deg, rgba(2, 0, 36, 0.8) 0%,
+		rgba(9, 9, 121, 0.8) 35%, rgba(184, 0, 255, 0.8) 100%);
+	width: 100%;
+	background-size: cover;
+	overflow: auto;
+	width: 100%;
+	height: 100%;
+	overflow: hidden;
+}
+
+.Bgimg img {
+	width: 100%;
+}

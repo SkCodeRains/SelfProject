@@ -1,0 +1,265 @@
+html {
+    height: 100%;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    background-size: cover;
+    -o-background-size: cover;
+    background-image: linear-gradient(220.3deg, rgb(88, 114, 230) 10.9%, rgb(140, 35, 172) 87.1%);
+    overflow: hidden;
+}
+
+.container {
+    height: 85vh;
+    margin: 100px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    scroll-behavior: smooth;
+    overflow-y: scroll;
+    scroll-behavior: smooth;
+}
+
+.book {
+    background-color: rgba(245, 245, 245, 0.9);
+    box-shadow: 0px 10px 20px 1px rgb(0, 0, 0);
+    width: 250px;
+    height: 350px;
+    margin: 10px;
+    font-size: 16px;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    border-radius: 10px;
+}
+
+.img {
+    margin-top: 1%;
+    height: 49%;
+    width: 100% !important;
+    display: flex;
+    justify-content: center;
+}
+
+.img img {
+    width: 95%;
+    object-fit: scale-down;
+    border-radius: 10px;
+}
+
+::-webkit-scrollbar {
+    color: transparent;
+}
+
+.details {
+    margin-top: 20px;
+    width: 100%;
+    height: 50%;
+    display: grid;
+    grid-template-columns: 50% 50%;
+    grid-template-rows: 25px 35px 25px 30px 40px;
+}
+
+.name {
+    text-align: center;
+    color: green;
+    font-size: 17px;
+}
+
+.author {
+    color: blue;
+    font-size: 17px;
+}
+
+.name,
+.author,
+.qauntity {
+    grid-column: 1/3;
+}
+
+button {
+    width: 99%;
+    height: 40px;
+    background: linear-gradient(to left bottom, #0e94e2 0%, #c11fe2be 70%);
+    border-style: none;
+    color: #fff;
+    font-size: 23px;
+    letter-spacing: 3px;
+    font-family: 'Lato';
+    font-weight: 600;
+    outline: none;
+    cursor: pointer;
+    position: relative;
+    padding: 0px;
+    overflow: hidden;
+    transition: all .5s;
+    box-shadow: 0px 1px 2px rgba(0, 0, 0, .2);
+    border-radius: 10px;
+}
+
+button span {
+    position: absolute;
+    display: block;
+}
+
+button span:nth-child(1) {
+    height: 3px;
+    width: 200px;
+    top: 0px;
+    left: -200px;
+    background: linear-gradient(to right, rgba(0, 0, 0, 0), #f6e58d);
+    border-top-right-radius: 1px;
+    border-bottom-right-radius: 1px;
+    animation: span1 2s linear infinite;
+    animation-delay: 1s;
+}
+
+@keyframes span1 {
+    0% {
+        left: -200px
+    }
+    100% {
+        left: 200px;
+    }
+}
+
+button span:nth-child(2) {
+    height: 70px;
+    width: 3px;
+    top: -70px;
+    right: 0px;
+    background: linear-gradient(to bottom, rgba(0, 0, 0, 0), #f6e58d);
+    border-bottom-left-radius: 1px;
+    border-bottom-right-radius: 1px;
+    animation: span2 2s linear infinite;
+    animation-delay: 2s;
+}
+
+@keyframes span2 {
+    0% {
+        top: -70px;
+    }
+    100% {
+        top: 70px;
+    }
+}
+
+button span:nth-child(3) {
+    height: 3px;
+    width: 200px;
+    right: -200px;
+    bottom: 0px;
+    background: linear-gradient(to left, rgba(0, 0, 0, 0), #f6e58d);
+    border-top-left-radius: 1px;
+    border-bottom-left-radius: 1px;
+    animation: span3 2s linear infinite;
+    animation-delay: 3s;
+}
+
+@keyframes span3 {
+    0% {
+        right: -200px;
+    }
+    100% {
+        right: 200px;
+    }
+}
+
+button span:nth-child(4) {
+    height: 70px;
+    width: 3px;
+    bottom: -70px;
+    left: 0px;
+    background: linear-gradient(to top, rgba(0, 0, 0, 0), #f6e58d);
+    border-top-right-radius: 1px;
+    border-top-left-radius: 1px;
+    animation: span4 2s linear infinite;
+    animation-delay: 4s;
+}
+
+@keyframes span4 {
+    0% {
+        bottom: -70px;
+    }
+    100% {
+        bottom: 70px;
+    }
+}
+
+button:hover {
+    transition: all .5s;
+    transform: scale(1.1);
+    box-shadow: 0px 3px 5px rgba(0, 0, 0, .4);
+}
+
+button:hover span {
+    animation-play-state: paused;
+}
+
+
+/*  insert panel   */
+
+.insertContainer {
+    background-color: #0e94e2;
+    width: 400px;
+    height: 700px;
+    display: flex;
+    flex-direction: column;
+    background-color: whitesmoke;
+    box-shadow: 0px 10px 20px 1px rgb(0, 0, 0);
+}
+
+.headins {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    height: 130px;
+    text-align: center;
+    font-size: 22px;
+    text-transform: capitalize;
+    color: white;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    background: rgb(44, 164, 231);
+    background: linear-gradient(160deg, rgba(44, 164, 231, 1) 0%, rgba(0, 116, 255, 1) 100%);
+}
+
+.insertContainer,
+.insertContainer input {
+    border-radius: 3px;
+    border-style: solid;
+    border-color: rgb(172, 170, 170);
+    border-width: 1px;
+}
+
+.insertContainer input {
+    box-shadow: 0px 1px 5px 1px rgba(0, 0, 0, 0.336);
+    width: 80%;
+    margin-top: 20px;
+    height: 40px;
+    outline: none;
+    font-size: 18px;
+}
+
+.insInputs input {
+    background-color: transparent;
+}
+
+.insInputs,
+.insButtons {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+}
+
+.insButtons input[type=submit] {
+    font-size: 25px;
+    text-transform: uppercase;
+    margin-bottom: 10px;
+    height: 50px;
+    background: rgb(44, 164, 231);
+    background: linear-gradient(160deg, rgba(44, 164, 231, 1) 0%, rgba(0, 116, 255, 1) 100%);
+}
+
+a {
+	
+    font-size: 17px;
+    text-transform: uppercase;
+    text-decoration: none;
+}

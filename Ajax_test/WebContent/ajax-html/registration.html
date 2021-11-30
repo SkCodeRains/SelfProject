@@ -1,0 +1,36 @@
+<form>
+
+	<div class="form__group field" style="margin-top: 30px;">
+
+		<input type="number" id="accno" class="form__field" onkeyup="registrationCheck()" placeholder="Enter account number" required>
+		<label for="accno" class="form__label">Enter account number</label>
+	</div>
+
+
+
+	<div class="form__group field" style="margin-top: 30px;">
+		<input type="text" id="accnm" required="required" class="form__field" placeholder="Enter account Holder Name">
+		<label for="accnm" class="form__label">Enter account Holder Name</label>
+	</div>
+
+
+
+	<div class="form__group field" style="margin-top: 30px;">
+		<select id="acctype" required="required" class="form__field">
+			<option value="">SELECT ACCOUNT TYPE</option>
+			<option value="saving">SAVING</option>
+			<option value="current">CURRENT</option>
+			<option value="fixed">FIXED</option>
+		</select>
+	</div>
+
+
+
+	<div class="form__group field" style="margin-top: 30px;">
+
+		<input type="number" id="accbal" required="required" class="form__field" placeholder="Enter initial account Balance">
+		<label for="accbal" class="form__label">Enter initial account Balance</label>
+	</div>
+
+	<button id="submitbn" type="button" onclick="registration()" onsubmit="registration()">Create Account</button>
+</form>

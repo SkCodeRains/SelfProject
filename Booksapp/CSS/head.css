@@ -1,0 +1,30 @@
+@charset "ISO-8859-1";
+.topnav {
+    box-shadow: -1px 4px 28px 0px rgba(0, 0, 0, 0.897);
+    top: 0;
+    left: 0;
+    width: 100%;
+    position: fixed;
+    display: flex;
+    margin-right: 10px;
+    background-color: aliceblue;
+}
+
+.topnav a {
+    color: black;
+    text-align: center;
+    padding: 14px 90px;
+    text-decoration: none;
+    font-size: 19px;
+    font-weight: bold;
+    z-index: 100;
+}
+
+.topnav a:hover {
+    transition: 0.5s;
+    color: white;
+    font-size: large;
+    background-color: rgba(248, 4, 126, 0.562);
+    box-shadow: -1px 4px 28px 0px rgba(248, 4, 126, 0.712);
+    border-style: groove;
+}

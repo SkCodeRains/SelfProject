@@ -1,0 +1,15 @@
+@charset "ISO-8859-1";
+
+body {
+	background: url(https://gatorcare.org/files/2020/04/book-club-image.jpg)
+		no-repeat center center fixed;
+	-webkit-background-size: cover;
+	-moz-background-size: cover;
+	background-size: cover;
+	-o-background-size: cover;
+	-moz-user-select: none;
+	-webkit-user-select: none;
+	-ms-user-select: none;
+	user-select: none;
+	-o-user-select: none;
+}

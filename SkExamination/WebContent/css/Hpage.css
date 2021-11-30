@@ -1,0 +1,78 @@
+@charset "ISO-8859-1";
+
+.HomeLink {
+	float: left;
+	font-size: 16px;
+	color: white;
+	text-align: center;
+	padding: 14px 25px;
+	text-decoration: none;
+	text-align: center;
+	font-size: 16px;
+	border: thick;
+	outline: maroon;
+}
+
+.bar a {
+	float: right;
+	font-size: 16px;
+	color: white;
+	text-align: center;
+	padding: 14px 16px;
+	text-decoration: none;
+}
+
+.bar {
+	overflow: hidden;
+}
+
+.bar a:hover {
+	overflow: hidden;
+	background: rgb(2, 0, 36);
+	background: linear-gradient(90deg, rgba(2, 0, 36, 1) 0%,
+		rgba(121, 9, 96, 1) 100%, rgba(0, 212, 255, 1) 100%);
+	color: white;
+}
+/* Dropdown List*/
+.dropdown {
+	float: right;
+	overflow: hidden;
+}
+
+.dropdown .dropbtn {
+	font-size: 16px;
+	border: none;
+	outline: none;
+	color: white;
+	padding: 14px 16px;
+	background-color: inherit;
+	font-family: inherit;
+	margin: 0;
+}
+
+.navbar a:hover, .dropdown:hover .dropbtn {
+	background-color: inherit;
+}
+
+.dropdown-content {
+	display: none;
+	position: absolute;
+	background-color: inherit;
+	min-width: 160px;
+	box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
+	z-index: 1;
+}
+
+.dropdown-content a:hover {
+	background-color: #ddd;
+}
+
+.dropdown:hover .dropdown-content {
+	display: block;
+	float: left;
+}
+/* Dropdown End*/
+.heading {
+	padding-top: 10%;
+	font-size: 2em;
+}

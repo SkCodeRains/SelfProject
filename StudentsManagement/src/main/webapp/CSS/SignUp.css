@@ -1,0 +1,60 @@
+body {
+  font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+  background-color: #4158D0;
+  background-image: linear-gradient(43deg, #4158D0 0%, #C850C0 46%, #FFCC70 100%);
+  overflow: hidden;
+}
+
+.container {
+  top:0;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  align-items: center;  
+  width: 100%;
+  height: 100vh;
+  display: flex;
+}
+
+.subContainer {
+  align-items: center;
+  box-shadow: -1px 4px 28px 0px rgba(0, 0, 0, 0.6);
+  width: 98.125%;
+  height: 70.3400673401%;
+  box-shadow: -1px 4px 28px 0px rgba(0, 0, 0, 0.6);
+  background-color: rgb(255, 255, 255);
+  border-radius: 10px;
+  display: flex;
+}
+
+.leftpanel {
+  align-items: center;
+}
+
+.leftpanel, .rightpanel {
+  width: 50%;
+  height: 100%;
+  display: flex;
+  justify-content: center;
+}
+
+.icon img {
+  height: 250px;
+  box-shadow: -1px 4px 28px 0px rgba(0, 0, 0, 0.719);
+  border-radius: 125px;
+}
+
+.names input {
+  width: 33% !important;
+  margin-right: auto;
+}
+
+input {
+  outline: none !important;
+}
+
+.btns input {
+  width: 40% !important;
+}
+
+  

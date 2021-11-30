@@ -1,0 +1,44 @@
+@charset "ISO-8859-1";
+
+* {
+	-webkit-box-sizing: border-box;
+	-moz-box-sizing: border-box;
+	-ms-box-sizing: border-box;
+	-o-box-sizing: border-box;
+	box-sizing: border-box;
+}
+
+.inputs {
+	padding-top: 10%
+}
+
+input {
+	width: 50%;
+	margin-bottom: 15px;
+	background: rgba(204, 204, 255, 0.3);
+	border: none;
+	outline: none;
+	padding: 15px;
+	font-size: 13px;
+	color: #fff;
+	border-radius: 15px;
+}
+
+input:focus {
+	box-shadow: inset 0 -5px 45px rgba(100, 100, 100, 0.4), 0 1px 1px
+		rgba(255, 255, 255, 0.2);
+}
+
+input [type=submit] {
+	background: rgba(179, 179, 255, 0.8);
+}
+
+.check {
+	float: left;
+}
+
+::placeholder {
+	opacity: 0.8;
+	color: White;
+	/* Firefox */
+}

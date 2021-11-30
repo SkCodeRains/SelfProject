@@ -1,0 +1,48 @@
+@charset "ISO-8859-1";
+
+.UpdateMain {
+	background-color: linear-gradient(180deg, rgba(255, 0, 249, 0.7203256302521008)
+		0%, rgba(39, 233, 206, 1) 100%);
+	display: block;
+	width: 100%;
+	height: auto;
+	padding-left: 10%;
+	position: fixed
+}
+
+input, select {
+	background-color: transparent;
+	width: 80%;
+	padding: 12px 20px;
+	box-sizing: border-box;
+	border: 3px solid #ccc;
+	-webkit-transition: 0.5s;
+	transition: 0.5s;
+	outline: none;
+	background-color: transparent;
+}
+
+input[type=text]:focus, input[type=password]:focus, select:focus {
+	border: 3px solid #555;
+}
+
+.rightdiv {
+	display: block;
+	position: relative;
+	width: 50%;
+	float: right;
+	position: relative;
+}
+
+.leftdiv {
+	display: block;
+	width: 50%;
+	position: fixed;
+}
+
+input[type=submit]:hover {
+	border-radius: 20px 0px 0px 20px;
+	background: rgb(209, 207, 48);
+	background: linear-gradient(90deg, rgba(209, 207, 48, 0.36738445378151263)
+		0%, rgba(117, 235, 135, 0.3757878151260504) 100%);
+}

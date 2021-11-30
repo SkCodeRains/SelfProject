@@ -1,0 +1,23 @@
+.footer {
+	display: inline-block;
+	background: #002147;
+	position: fixed;
+	left: 0;
+	height: 40%;
+	width: 100%;
+	border-bottom: 1px solid #CCCCCC;
+	border-top: 1px solid #DDDDDD;
+	width: 100%;
+	bottom: 0;
+	background: #002147;
+}
+
+.footer h4 {
+	color: white;
+	font-size: 2em;
+	font-family: cursive;
+}
+
+li {
+	display: inline-block;
+}

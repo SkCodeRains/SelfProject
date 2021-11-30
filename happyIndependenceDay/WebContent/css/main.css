@@ -1,0 +1,80 @@
+html {
+	width: 100%;
+	height: 100%;
+	background: rgb(249, 147, 48);
+	background: linear-gradient(180deg, rgba(249, 147, 48, 1) 0%,
+		rgba(255, 255, 255, 1) 50%, rgba(0, 255, 0, 1) 100%);
+	-webkit-box-sizing: border-box;
+	-moz-box-sizing: border-box;
+	-ms-box-sizing: border-box;
+	-o-box-sizing: border-box;
+	box-sizing: border-box;
+}
+.heads img ,.heads2 img  {
+	width: 100%;
+}
+
+.img {
+	height: 200px;
+}
+
+.heads {
+	width: 100%
+}
+
+.heads2 {
+	width: 70%;
+	display: block;
+	margin-left: auto;
+	margin-right: auto;
+}
+
+.footer {
+	width: 100%;
+	bottom: 0;
+	position: fixed;
+	font-size: 20px;
+	position: fixed;
+	position: fixed;
+}
+
+@import url(https://fonts.googleapis.com/css?family=Open+Sans);
+
+
+.area {
+  text-align: center;
+  font-size: 70px;
+  color: #fff;
+  letter-spacing: -7px;
+  font-weight: 700;
+  text-transform: uppercase;
+  animation: blur .75s ease-out infinite;
+  text-shadow: 0px 0px 5px #fff, 0px 0px 7px #fff;
+}
+
+@keyframes blur {
+  from {
+    text-shadow:0px 0px 10px #fff,
+      0px 0px 10px #fff, 
+      0px 0px 25px #fff,
+      0px 0px 25px #fff,
+      0px 0px 25px #fff,
+      0px 0px 25px #fff,
+      0px 0px 25px #fff,
+      0px 0px 25px #fff,
+      0px 0px 50px #fff,
+      0px 0px 50px #fff,
+      0px 0px 50px #7B96B8,
+      0px 0px 150px #7B96B8,
+      0px 10px 100px #7B96B8,
+      0px 10px 100px #7B96B8,
+      0px 10px 100px #7B96B8,
+      0px 10px 100px #7B96B8,
+      0px -10px 100px #7B96B8,
+      0px -10px 100px #7B96B8;
+  }
+}
+
+
+
+
